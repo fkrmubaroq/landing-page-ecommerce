@@ -1,6 +1,6 @@
-import PlayIcon from "@/components/icons/Play";
 import Header from "@/components/layout/Header";
-import Button from "@/components/ui/button";
+import ButtonExplore from "@/components/ui/button/ButtonExplore";
+import ButtonViewIntro from "@/components/ui/button/ButtonViewIntro";
 import Image from "next/image";
 import "./SectionHero.scss";
 export default function SectionHero() {
@@ -17,13 +17,8 @@ export default function SectionHero() {
         </div>
 
         <div className="section-hero__button--action">
-          <Button variant="secondary" className="section-hero__button--view">
-            <div>View Intro</div>
-            <PlayIcon />
-          </Button>
-          <Button variant="primary" className="section-hero__button--explore">
-            Explore Now
-          </Button>
+          <ButtonViewIntro />
+          <ButtonExplore />
         </div>
 
         <div className="section-hero__image-mobile">

@@ -1,4 +1,5 @@
 import SectionHero from "./(section)/SectionHero";
+import SectionTagline from "./(section)/SectionTagline";
 import SectionWhatsNew from "./(section)/SectionWhatsNew";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <SectionHero />
       <SectionWhatsNew />
+      <SectionTagline />
     </>
   );
 }
