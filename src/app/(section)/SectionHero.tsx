@@ -1,6 +1,6 @@
 import PlayIcon from "@/components/icons/Play";
 import Header from "@/components/layout/Header";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/button";
 import Image from "next/image";
 import "./SectionHero.scss";
 export default function SectionHero() {

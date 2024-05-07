@@ -1,0 +1,40 @@
+#section-whats-new {
+  padding-left: 16px;
+  padding-right: 16px;
+  .section-whats-new__items {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom:16px;
+    .section-whats-new__content {
+      display: flex;
+      flex-direction: column;
+      padding: 4px;
+      row-gap: 4px;
+      margin-bottom: 16px;
+      .title {
+        color: var(--neutral-color-100);
+        line-height: 20px;
+        font-size: 14px;
+        font-weight: 700;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+      .gene,
+      .age {
+        color: var(--neutral-color-60);
+        line-height: 18px;
+        font-size: 12px;
+        font-weight: 500;
+      }
+      .price {
+        color: var(--neutral-color-100);
+        line-height: 24px;
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+  }
+}

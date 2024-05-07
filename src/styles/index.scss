@@ -5,8 +5,10 @@
   --bg-section-hero-gradient-2: #FFE7BA;
   --primary-color: #002A48;
   --secondary-color: transparent;
-  --neutral-color-80: #242B33;
   --neutral-color-00: #FDFDFD;
+  --neutral-color-60: #667479;
+  --neutral-color-80: #242B33;
+  --neutral-color-100: #00171F;
   --dark-blue:#003459;
 
 }
@@ -14,7 +16,14 @@ html,body{
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: "SVN-Gilroy", sans-serif;
+  font-family: "SVN-Gilroy", sans-serif !important;
+}
+
+.w-full{
+  width:100%;
+}
+.bold{
+  font-weight: 700;
 }
 
 .flex-centered{
@@ -25,4 +34,8 @@ html,body{
 
 .rounded-full{
   border-radius: 50%;
+}
+
+.rounded-img{
+  border-radius: 12px;
 }
