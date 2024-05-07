@@ -57,7 +57,7 @@ export default function SectionHero() {
 function RectangleCards() {
   return (
     <>
-      <div className="rectangle_cards" id="mobile">
+      <div className="rectangle_cards mobile" >
         <svg
           width="399"
           height="371"
@@ -85,7 +85,7 @@ function RectangleCards() {
           />
         </svg>
       </div>
-      <div className="rectangle_cards" id="desktop">
+      <div className="rectangle_cards desktop">
         <svg
           width="798"
           height="546"

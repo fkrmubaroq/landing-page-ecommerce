@@ -12,7 +12,7 @@
 
   .section-hero__wrapper {
     margin-top: 80px;
-    max-width: 1200px;
+    max-width: 1180px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -20,7 +20,7 @@
     @media (min-width: 320px) {
       height: 650px;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 1180px) {
       height: 595px;
     }
     .column-1 {
@@ -29,7 +29,7 @@
     .section-hero__content {
       display: flex;
       margin-top: 35px;
-      @media (min-width: 320px) and (max-width: 1200px) {
+      @media (min-width: 320px) and (max-width: 1180px) {
         padding-left: 16px;
         padding-right: 16px;
         display: flex;
@@ -41,7 +41,7 @@
         line-height: 60px;
         color: var(--primary-color);
         margin: 0;
-        @media (min-width: 1200px) {
+        @media (min-width: 1180px) {
           font-size: 60px;
           line-height: 68px;
         }
@@ -51,7 +51,7 @@
         font-weight: 700;
         line-height: 38px;
         font-size: 28px;
-        @media (min-width: 1200px) {
+        @media (min-width: 1180px) {
           font-size: 46px;
           line-height: 60px;
         }
@@ -63,7 +63,7 @@
         color: var(--neutral-color-80);
         padding-top: 12px;
         margin-bottom: 32px;
-        @media (min-width: 1200px) {
+        @media (min-width: 1180px) {
           font-size: 16px;
           padding-top: 24px;
           line-height: 24px;
@@ -98,7 +98,7 @@
             position: absolute;
             bottom: 0;
           }
-          @media (min-width: 1200px) {
+          @media (min-width: 1180px) {
             &#desktop {
               display: block;
             }
@@ -115,23 +115,23 @@
           position: absolute;
           bottom: 0;
           @media (min-width: 320px) {
-            &#desktop {
+            &.desktop {
               display: none;
             }
-            &#mobile {
+            &.mobile {
               display: block;
               bottom: -60px;
               left: 50%;
               transform: translateX(-50%);
             }
           }
-          @media (min-width: 1200px) {
-            &#desktop {
+          @media (min-width: 1180px) {
+            &.desktop {
               bottom: -5px;
               right: -100px;
               display: block;
             }
-            &#mobile {
+            &.mobile {
               display: none;
             }
           }
@@ -144,7 +144,7 @@
     bottom: 0;
     left: -100px;
     display: none;
-    @media (min-width:1200px){
+    @media (min-width:1180px){
       display: block;
     }
   }

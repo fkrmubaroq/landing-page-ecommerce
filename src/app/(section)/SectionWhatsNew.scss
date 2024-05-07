@@ -2,8 +2,8 @@
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: 40px;
-  @media (min-width: 1200px) {
-    max-width: 1200px;
+  @media (min-width: 1180px) {
+    max-width: 1180px;
     margin: auto;
      margin-bottom: 60px;
   }
@@ -15,7 +15,7 @@
       gap: 12px;
 
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 1180px) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
       margin-top:28px;
       gap: 20px;
@@ -23,7 +23,7 @@
     }
     .card {
       > img {
-        @media (min-width: 1200px) {
+        @media (min-width: 1180px) {
           width: 264px;
           height: 264px;
           object-fit: cover;
@@ -63,13 +63,13 @@
   }
   .section-whats-new__button-mobile{
     display: none;
-    @media (min-width: 320px) and (max-width: 1200px) {
+    @media (min-width: 320px) and (max-width: 1180px) {
       display: block;
     }
   }
   .section-whats-new__button-desktop{
     display: block;
-    @media (min-width: 320px) and (max-width: 1200px) {
+    @media (min-width: 320px) and (max-width: 1180px) {
       display: none;
     }
   }
