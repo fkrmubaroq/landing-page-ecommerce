@@ -1,0 +1,33 @@
+$status-bar-height: 47px;
+.header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  .logo{
+    position: relative;
+  }
+  @media (min-width: 360px) {
+    padding-top :13.5px;
+    height: 57px;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 16px;
+  }
+  .header__menu{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .header__rectangle{
+    position: absolute;
+    left:0;
+    > svg {
+      @media (max-width:414px){
+        width: 100%;
+      }
+    }
+  }
+}

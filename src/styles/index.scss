@@ -1,0 +1,28 @@
+@import url("https://fonts.cdnfonts.com/css/svn-gilroy");
+@import "./button";
+:root{
+  --bg-section-hero-gradient-1: #FCEED5;
+  --bg-section-hero-gradient-2: #FFE7BA;
+  --primary-color: #002A48;
+  --secondary-color: transparent;
+  --neutral-color-80: #242B33;
+  --neutral-color-00: #FDFDFD;
+  --dark-blue:#003459;
+
+}
+html,body{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "SVN-Gilroy", sans-serif;
+}
+
+.flex-centered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rounded-full{
+  border-radius: 50%;
+}
