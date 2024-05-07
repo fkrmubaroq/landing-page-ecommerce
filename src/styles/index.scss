@@ -1,5 +1,6 @@
 @import url("https://fonts.cdnfonts.com/css/svn-gilroy");
 @import "./button";
+@import "./line-clamp";
 :root{
   --bg-section-hero-gradient-1: #FCEED5;
   --bg-section-hero-gradient-2: #FFE7BA;
@@ -10,6 +11,7 @@
   --neutral-color-80: #242B33;
   --neutral-color-100: #00171F;
   --dark-blue:#003459;
+  --blue-sea: #00A7E7;
 
 }
 html,body{
