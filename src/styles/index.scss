@@ -14,6 +14,7 @@
   --neutral-color-100: #00171F;
   --dark-blue:#003459;
   --blue-sea: #00A7E7;
+  --mon-yellow: #FCEED5;
 
 }
 html,body{
@@ -60,4 +61,7 @@ html,body{
 
 .shrink-0{
   flex-shrink: 0;
+}
+.flex-col{
+  flex-direction: column;
 }
