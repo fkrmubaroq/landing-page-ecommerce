@@ -1,7 +1,7 @@
 #section-tag-line {
   padding-left: 16px;
   padding-right: 16px;
-  margin-bottom:40px;
+  margin-bottom: 40px;
   position: relative;
   border: none;
 
@@ -12,52 +12,58 @@
     position: relative;
     background-color: var(--dark-blue);
     border-radius: 20px;
-    .section-tag-line__card__rectangle {
+    .section-tag-line__card__rectangle-top {
       position: absolute;
       top: 0;
     }
-  }
-  .section-tag-line__card__content {
-    padding-top: 32px;
-    text-align: center;
-    position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
-    .section-tag-line__card__content__title {
-      color: var(--primary-color);
-      font-weight: 800;
-      font-size: 36px;
-      line-height: 54px;
-    }
-    .section-tag-line__card__content__sub-title {
-      color: var(--primary-color);
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 36px;
-      margin-bottom: 12px;
-    }
-    .section-tag-line__card__content__description {
-      color: var(--neutral-color-80);
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 18px;
-      margin-bottom: 32px;
-    }
-    .section-tag-line__button--action {
-      display: flex;
-      justify-content: center;
-      column-gap: 16px;
-      margin-bottom: 25px;
+    .section-tag-line__card__rectangle-bottom {
+      position: absolute;
+      bottom: 0;
+      left: -20px;
     }
 
-    .section-tag-line__image-mobile {
+    .section-tag-line__card__content {
+      padding-top: 32px;
+      text-align: center;
       position: relative;
-      
-      img {
-        object-fit: cover;
-        z-index: 2;
-        @media (max-width: 414px) {
-          width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+      .section-tag-line__card__content__title {
+        color: var(--primary-color);
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 54px;
+      }
+      .section-tag-line__card__content__sub-title {
+        color: var(--primary-color);
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 12px;
+      }
+      .section-tag-line__card__content__description {
+        color: var(--neutral-color-80);
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 32px;
+      }
+      .section-tag-line__button--action {
+        display: flex;
+        justify-content: center;
+        column-gap: 16px;
+        margin-bottom: 25px;
+      }
+
+      .section-tag-line__image-mobile {
+        position: relative;
+
+        img {
+          object-fit: cover;
+          z-index: 2;
+          @media (max-width: 414px) {
+            width: 100%;
+          }
         }
       }
     }

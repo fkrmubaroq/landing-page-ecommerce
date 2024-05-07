@@ -93,7 +93,7 @@ function CardItem({ data }: { data: CardItem }) {
   return (
     <Card>
       <Image
-        className="rounded-img"
+        className="rounded-img w-full"
         src={data.image}
         width={169}
         height={169}

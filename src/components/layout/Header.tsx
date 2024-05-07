@@ -1,24 +1,55 @@
+import ChevronIcon from "../icons/Chevron";
+import CountryIcon from "../icons/Country";
 import HamburgerIcon from "../icons/Hamburger";
 import Logo from "../icons/Logo";
 import SearchIcon from "../icons/Search";
+import SearchInput from "../ui/SearchInput";
+import Button from "../ui/button";
 import "./Header.scss";
 
 export default function Header() {
   return (
     <header className="header">
-      <RectangleIcon />
-      <Menu />
-      <Logo />
-      <SearchIcon />
+      <HeaderMobile />
+      <HeaderDesktop />
     </header>
   );
 }
 
-function Menu() {
+function HeaderMobile() {
   return (
-    <div>
-      <div className="header__menu">
+    <div className="header__menu-mobile">
+      <RectangleIcon />
+      <div className="header__hamburger-icon">
         <HamburgerIcon />
+      </div>
+      <Logo />
+      <SearchIcon />
+    </div>
+  );
+}
+
+const listMenu = ["Home", "Category", "About", "Contact"];
+function HeaderDesktop() {
+  return (
+    <div className="header__menu-desktop">
+      <div className="header__menu-desktop__content">
+        <RectangleIcon />
+        <Logo />
+        <nav className="header__menu-desktop__nav">
+          <ul>
+            {listMenu.map((item, key) => (
+              <li key={key}>{item}</li>
+            ))}
+          </ul>
+        </nav>
+        <div className="header__menu-desktop--action">
+          <SearchInput />
+          <Button variant="primary" className="join">
+            Join the community
+          </Button>
+          <LanguageOption />
+        </div>
       </div>
     </div>
   );
@@ -44,6 +75,16 @@ function RectangleIcon() {
           fill="#F7DBA7"
         />
       </svg>
+    </div>
+  );
+}
+
+function LanguageOption() {
+  return (
+    <div className="header__menu-desktop__language-option">
+      <CountryIcon />
+      <div>VND</div>
+      <ChevronIcon rotate="bottom" />
     </div>
   );
 }

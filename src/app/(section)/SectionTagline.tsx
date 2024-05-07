@@ -7,7 +7,7 @@ export default function SectionTagline() {
   return (
     <section id="section-tag-line">
       <div className="section-tag-line__card">
-        <RectangleIcon />
+        <RectangleIconTop />
         <div className="section-tag-line__card__content">
           <div className="section-tag-line__card__content__title">
             One More Friend
@@ -32,7 +32,10 @@ export default function SectionTagline() {
               width={524}
               height={349}
               alt=""
+              style={{ position:"relative"}}
             />
+            
+            <RectangleIconBottom/>
           </div>
         </div>
       </div>
@@ -40,9 +43,9 @@ export default function SectionTagline() {
   );
 }
 
-function RectangleIcon() {
+function RectangleIconTop() {
   return (
-    <div className="section-tag-line__card__rectangle">
+    <div className="section-tag-line__card__rectangle-top">
       <svg
         width="382"
         height="375"
@@ -58,6 +61,29 @@ function RectangleIcon() {
           rx="75"
           transform="rotate(11.4104 -79.3746 -354)"
           fill="#FCEED5"
+        />
+      </svg>
+    </div>
+  );
+}
+function RectangleIconBottom() {
+  return (
+    <div className="section-tag-line__card__rectangle-bottom">
+      <svg
+        width="382"
+        height="205"
+        viewBox="0 0 382 205"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="41.4932"
+          y="-34.2795"
+          width="787.54"
+          height="787.54"
+          rx="99"
+          transform="rotate(28.2512 41.4932 -34.2795)"
+          fill="#002A48"
         />
       </svg>
     </div>

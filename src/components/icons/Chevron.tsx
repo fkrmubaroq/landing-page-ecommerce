@@ -1,6 +1,11 @@
-export default function ChevronIcon() {
+const rotateIcon = {
+  right: "rotate(0deg)", // default
+  bottom: "rotate(90deg)"
+}
+export default function ChevronIcon({ rotate = "right"} : { rotate: "right" | "bottom" }) {
   return (
     <svg
+      style={{ transform: rotateIcon[rotate] }}
       width="7"
       height="10"
       viewBox="0 0 7 10"
