@@ -17,17 +17,23 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    @media (min-width: 320px) {
+      height: 650px;
+    }
+    @media (min-width: 1200px) {
+      height: 595px;
+    }
     .column-1 {
       max-width: 480px;
     }
     .section-hero__content {
       display: flex;
       margin-top: 35px;
-      height: 595px;
       @media (min-width: 320px) and (max-width: 1200px) {
         padding-left: 16px;
         padding-right: 16px;
-        display: block;
+        display: flex;
+        justify-content: center;
       }
       .section-hero__tagline {
         font-size: 46px;
@@ -78,39 +84,57 @@
       .section-hero__image {
         img {
           z-index: 2;
-          width: 414px;
-          height: 386px;
+          position: relative;
+          object-fit: cover;
+          @media (min-width: 320px) {
+            &#desktop {
+              display: none;
+            }
+            &#mobile {
+              display: block;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+            position: absolute;
+            bottom: 0;
+          }
           @media (min-width: 1200px) {
-            object-fit: cover;
-            bottom:-30px;
+            &#desktop {
+              display: block;
+            }
+            &#mobile {
+              display: none;
+            }
+
+            bottom: -30px;
             right: -180px;
             position: absolute;
-            width: 944px;
-            height: 693px;
           }
         }
         .rectangle_cards {
           position: absolute;
           bottom: 0;
           @media (min-width: 320px) {
-            &#desktop{
+            &#desktop {
               display: none;
             }
-            &#mobile{
+            &#mobile {
               display: block;
+              bottom: -60px;
+              left: 50%;
+              transform: translateX(-50%);
             }
           }
           @media (min-width: 1200px) {
-            &#desktop{
-              bottom:-5px;
-              right:-100px;
+            &#desktop {
+              bottom: -5px;
+              right: -100px;
               display: block;
             }
-            &#mobile{
+            &#mobile {
               display: none;
             }
           }
-
         }
       }
     }
@@ -118,6 +142,10 @@
   .rectangle_single_card {
     position: absolute;
     bottom: 0;
-    left:-100px ;
+    left: -100px;
+    display: none;
+    @media (min-width:1200px){
+      display: block;
+    }
   }
 }

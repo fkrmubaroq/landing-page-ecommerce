@@ -73,10 +73,18 @@ const cardItems: CardItem[] = [
 export default function SectionWhatsNew() {
   return (
     <section id="section-whats-new">
-      <TitleSection
-        title="Whats new?"
-        subTitle="Take A Look At Some Of Our Pets"
-      />
+      <div className="flex justify-between ">
+        <TitleSection
+          title="Whats new?"
+          subTitle="Take A Look At Some Of Our Pets"
+        />
+        <div
+          style={{ width: "160px" }}
+          className="section-whats-new__button-desktop"
+        >
+          <ButtonViewMore />
+        </div>
+      </div>
 
       <div className="section-whats-new__items">
         {cardItems.map((item, key) => (
@@ -84,7 +92,9 @@ export default function SectionWhatsNew() {
         ))}
       </div>
 
-      <ButtonViewMore />
+      <div className="section-whats-new__button-mobile">
+        <ButtonViewMore />
+      </div>
     </section>
   );
 }
@@ -102,12 +112,10 @@ function CardItem({ data }: { data: CardItem }) {
       <div className="section-whats-new__content">
         <div className="title">{data.title}</div>
         <div className="gene">
-          <span>Gene:</span>{" "}
-          <span className="bold">{data.gene}</span>
+          <span>Gene:</span> <span className="bold">{data.gene}</span>
         </div>
         <div className="age">
-          <span>Age:</span>{" "}
-          <span className="bold">{data.age}</span>
+          <span>Age:</span> <span className="bold">{data.age}</span>
         </div>
         <div className="price">{data.price}</div>
       </div>

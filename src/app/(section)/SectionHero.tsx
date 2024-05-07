@@ -35,6 +35,14 @@ export default function SectionHero() {
                 width={944}
                 height={693}
                 alt=""
+                id="desktop"
+              />
+              <Image
+                src="/images/section-hero/image-1-mobile.webp"
+                width={414}
+                height={386}
+                alt=""
+                id="mobile"
               />
               <RectangleCards />
             </div>
