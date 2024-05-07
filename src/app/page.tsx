@@ -1,3 +1,4 @@
+import Footer from "./(section)/Footer";
 import SectionArticle from "./(section)/SectionArticle";
 import SectionHero from "./(section)/SectionHero";
 import SectionTagline from "./(section)/SectionTagline";
@@ -10,6 +11,7 @@ export default function Home() {
       <SectionWhatsNew />
       <SectionTagline />
       <SectionArticle />
+      <Footer />
     </>
   );
 }
