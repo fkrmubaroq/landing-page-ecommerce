@@ -2,12 +2,9 @@
 import Header from "@/components/layout/Header";
 import ButtonExplore from "@/components/ui/button/ButtonExplore";
 import ButtonViewIntro from "@/components/ui/button/ButtonViewIntro";
-import { useMobileScreen } from "@/lib/hooks";
 import Image from "next/image";
 import "./SectionHero.scss";
 export default function SectionHero() {
-  const isMobileScreen = useMobileScreen();
-
   return (
     <section id="section-hero">
       <Header />

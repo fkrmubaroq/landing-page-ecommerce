@@ -19,8 +19,20 @@
     .section-tag-line__card__rectangle-top {
       position: absolute;
       top: 0;
+      left: 0;
+      right: 0;
       &.desktop {
+        display: none;
         @media (min-width: 1180px) {
+          display: block;
+        }
+      }
+      &.mobile {
+        display: block;
+        svg {
+          width: 100%;
+        }
+        @media (min-width: 1080px) {
           display: none;
         }
       }
@@ -62,6 +74,9 @@
         font-size: 12px;
         line-height: 18px;
         margin-bottom: 32px;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
       }
       .section-tag-line__button--action {
         display: flex;
@@ -76,8 +91,9 @@
         img {
           object-fit: cover;
           z-index: 2;
-          @media (max-width: 414px) {
+          @media (min-width: 414px) {
             width: 100%;
+            object-fit: contain;
           }
         }
       }
@@ -111,15 +127,20 @@
     }
   }
 
+  .section-tag-line__card__rectangle-top{
+    position: absolute;
+    right: 0;
+  }
+
   .section-tag-line-desktop__wrapper {
     overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .section-tag-line-desktop__image{
-      > img{
-        object-fit: contain;    
-        margin-top: 30px;  
+    .section-tag-line-desktop__image {
+      > img {
+        object-fit: contain;
+        margin-top: 30px;
       }
     }
     .section-tag-line-desktop__content {
@@ -159,16 +180,5 @@
       }
     }
 
-  }
-
-  .section-tag-line__card__rectangle-top {
-    position: absolute;
-    right:0;
-    bottom: -4px;
-    &.mobile {
-      @media (min-width: 1180px) {
-        display: none;
-      }
-    }
   }
 }

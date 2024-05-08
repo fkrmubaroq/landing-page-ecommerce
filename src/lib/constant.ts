@@ -1,1 +1,1 @@
-export const DESKTOP_SCREEN = 1024;
+export const DESKTOP_SCREEN = 1080;

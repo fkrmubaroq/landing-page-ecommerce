@@ -1,9 +1,13 @@
+"use client"
 import ButtonExplore from "@/components/ui/button/ButtonExplore";
 import ButtonViewIntro from "@/components/ui/button/ButtonViewIntro";
+import { useMobileScreen } from "@/lib/hooks";
 import Image from "next/image";
 import "./SectionSubTagLine.scss";
 
 export default function SectionSubTagLine() {
+  const isMobileScreen = useMobileScreen();
+  if (isMobileScreen) return <></>;
   return (
     <section id="section-sub-tag-line">
       <RectangleIconLeft />
@@ -20,8 +24,8 @@ export default function SectionSubTagLine() {
           </div>
 
           <div className="section-sub-tag-line__content-button--action">
-            <ButtonExplore style={{ width:"163px"}}/>
-            <ButtonViewIntro style={{ width: "161px"}} />
+            <ButtonExplore style={{ width: "163px" }} />
+            <ButtonViewIntro style={{ width: "161px" }} />
           </div>
         </div>
 
@@ -59,7 +63,6 @@ function RectangleIconLeft() {
       </svg>
     </div>
   );
-
 }
 
 function RectangleIconRight() {
@@ -97,5 +100,4 @@ function RectangleIconRight() {
       </svg>
     </div>
   );
-
 }
