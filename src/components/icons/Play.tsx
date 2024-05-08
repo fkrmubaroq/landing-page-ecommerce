@@ -12,9 +12,9 @@ export default function PlayIcon() {
           d="M8 7V13L13 10L8 7Z"
           fill="#003459"
           stroke="#003459"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     </div>
