@@ -10,16 +10,19 @@ import "./Footer.scss";
 export default function Footer() {
   return (
     <footer id="footer">
-      <FormSubscribe />
-      <div className="footer-menu-container">
-        <FooterMenu />
-        <SocialMediaIcons />
-      </div>
-      <div className="footer-policy">
-        <Logo />
-        <TermOfServiceAndPrivacy />
-        <div className="footer__copyright">
-          © 2022 Monito. All rights reserved.
+      <div className="footer__content">
+        {" "}
+        <FormSubscribe />
+        <div className="footer-menu-container">
+          <FooterMenu />
+          <SocialMediaIcons />
+        </div>
+        <div className="footer-policy">
+          <Logo />
+          <TermOfServiceAndPrivacy />
+          <div className="footer__copyright">
+            © 2022 Monito. All rights reserved.
+          </div>
         </div>
       </div>
     </footer>

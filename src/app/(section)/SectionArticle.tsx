@@ -38,16 +38,23 @@ const cardItems: CardItem[] = [
 export default function SectionArticle() {
   return (
     <section id="section-article">
-      <TitleSection
-        title="You already know ?"
-        subTitle="Useful pet knowledge"
-      />
+      <div className="flex justify-between section-article__button-desktop">
+        <TitleSection
+          title="You already know ?"
+          subTitle="Useful pet knowledge"
+        />
+        <div style={{ width: "160px" }}>
+          <ButtonViewMore />
+        </div>
+      </div>
       <div className="section-article__items">
         {cardItems.map((item, key) => (
           <CardItem key={key} data={item} />
         ))}
       </div>
-      <ButtonViewMore />
+      <div className="section-article__button-mobile">
+        <ButtonViewMore />
+      </div>
     </section>
   );
 }
