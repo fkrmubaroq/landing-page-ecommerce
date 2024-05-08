@@ -61,6 +61,9 @@ html,body{
 .object-contain{
   object-fit:contain;
 }
+.object-cover{
+  object-fit:cover;
+}
 .shrink-0{
   flex-shrink: 0;
 }

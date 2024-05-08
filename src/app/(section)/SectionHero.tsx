@@ -28,7 +28,7 @@ export default function SectionHero() {
           <div className="column-2">
             <div className="section-hero__image">
               <Image
-                src="/images/section-hero/image-1.webp"
+                src="/images/section-hero/image-1-desktop.webp"
                 width={944}
                 height={693}
                 alt=""
